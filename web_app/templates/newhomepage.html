@@ -12,6 +12,75 @@
     <title>Books4BusyPeople</title>
   </head>
   <body>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>   
+                    .sidenav {
+                    height: 100%;
+                    width: 0;
+                    position: fixed;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    background-color: #111;
+                    overflow-x: hidden;
+                    transition: 0.5s;
+                    padding-top: 60px;
+                    }
+
+                    .sidenav a {
+                    padding: 8px 8px 8px 32px;
+                    text-decoration: none;
+                    font-size: 25px;
+                    font-weight: bold;
+                    color: #b0daeb;
+                    font-family: arial black;
+                    display: block;
+                    transition: 0.3s;
+                    }
+
+                    .sidenav a:hover {
+                    color: #f1f1f1;
+                    }
+
+                    .sidenav .closebtn {
+                    position: absolute;
+                    top: 0;
+                    right: 25px;
+                    font-size: 36px;
+                    margin-left: 50px;
+                    }
+
+                    @media screen and (max-height: 450px) {
+                    .sidenav {padding-top: 15px;}
+                    .sidenav a {font-size: 18px;}
+                    }
+                    </style>
+                    </head>
+            
+
+                    <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="about.html">About</a>
+		            <a href="Contact.html">Contact Us</a></li>
+                    </div>
+
+                    <span style="font-size:16px;cursor:pointer;color:whitesmoke;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onclick="openNav()">&#9776; learn more</span>
+
+                    <script>
+                    function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                    }
+
+                    function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    }
+        </script>
+
+
+
+
+
     <style>   body {background-color: rgb(5, 9, 66); color: "white";}
         h1 {  color: white; text-align: center; font-family: "arial black"; }
         h2 {  color: white; text-align: center; }
@@ -19,8 +88,8 @@
         p {  color: white; font-family: "georgia"; } </style>
         <h1>Books4BusyPeople</h1>
         <h2>Culturing Hoyas One Book At A Time</h2>
-            <img src="Gtownlogo.png" height="100">
         <hr>
+        <p>Busy MBAs look forward to the day they’ll graduate. Beautiful Sunday afternoons free of Excel, catching up with old friends, getting a dog, getting a haircut, flossing--these are all places where we’ve cut corners in pursuit of higher education and better learning opportunities. But what we’ve mostly missed is the kind of self-initiated learning that made us such attractive prospective students for Georgetown in the first place. Books! We’ve missed reading our books! And we do not have time to catch up on all the gems we wanted to read, so we would like to have an efficient way of knowing which books the highest number of people agree are worth our while during a specific time period.</p>
         <form action="/bookstoread" method="POST">
             <fieldset>
                <p>
