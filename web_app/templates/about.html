@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+    <div class="page"></div>
+    <title>About</title>
+  </div> 
+  <body>
+    <style>   
+        .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        }
+
+        .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bold;
+        color: #b0daeb;
+        font-family: arial black;
+        display: block;
+        transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+        color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+        }
+        </style>
+        </head>
+
+
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="newhomepage.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="Contact.html">Contact Us</a></li>
+        </div>
+
+        <span style="font-size:16px;cursor:pointer;color:whitesmoke;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onclick="openNav()">&#9776; learn more</span>
+
+        <script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+</script>
+
+
+    <h1>ALYSSA BODEN</h1>
+    <h3><u>SKILLS AND INTERESTS</u></h3>
+    <hr>
+        <ul>
+            <li>ICAgile Professional Certification (2019)</li>
+            <li>Advanced proficiency in Microsoft Office, Adobe Creative Suite, Oracle PeopleSoft, ServiceNow, SPSS, JIRA, and MicroStrategy platforms </li>
+            <li>Detail oriented and passionate about User Experience and Design Thinking</li>
+        </ul>
+   
+<br>
+	  <footer>
+	    <p>&copy; 2020 Alyssa Boden's Professional Website 
+      </p>
+      <style> footer{color: rgba(255, 255, 255, 0.521); font-size: 7px; text-align: right;} </style>
+	  </footer>
+  </body>
+</html>

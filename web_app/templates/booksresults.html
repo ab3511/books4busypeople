@@ -9,31 +9,92 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <body>
-  <header>
+                <style>   
+                    .sidenav {
+                    height: 100%;
+                    width: 0;
+                    position: fixed;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    background-color: #111;
+                    overflow-x: hidden;
+                    transition: 0.5s;
+                    padding-top: 60px;
+                    }
+
+                    .sidenav a {
+                    padding: 8px 8px 8px 32px;
+                    text-decoration: none;
+                    font-size: 25px;
+                    font-weight: bold;
+                    color: #b0daeb;
+                    font-family: arial black;
+                    display: block;
+                    transition: 0.3s;
+                    }
+
+                    .sidenav a:hover {
+                    color: #f1f1f1;
+                    }
+
+                    .sidenav .closebtn {
+                    position: absolute;
+                    top: 0;
+                    right: 25px;
+                    font-size: 36px;
+                    margin-left: 50px;
+                    }
+
+                    @media screen and (max-height: 450px) {
+                    .sidenav {padding-top: 15px;}
+                    .sidenav a {font-size: 18px;}
+                    }
+                    </style>
+                    </head>
+
+
+                    <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="newhomepage.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="Contact.html">Contact Us</a></li>
+                    </div>
+
+                    <span style="font-size:16px;cursor:pointer;color:whitesmoke;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onclick="openNav()">&#9776; learn more</span>
+
+                    <script>
+                    function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                    }
+
+                    function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    }
+            </script>
+
+    <header>
     <div class="container">
       <div id="branding">
+        <style>   body {background-color: rgb(5, 9, 66); color: "white";}
+            h1 {  color: white; text-align: center; font-family: "arial black"; }
+            h2 {  color: white; text-align: center; }
+            h4 {  color: white; font-family: "arial black"; }
+            p {  color: white; font-family: "georgia"; } </style>
         <h1><span class="highlight">Georgetown Book Club</span></h1>
         <h2><span class="highlight">{{Genre}}</span></h2>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="newhomepage.html">Home</a></li>
-          <li class="current"><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-        </ul>
-      </nav>
-    </div>
+        <hr>    
   </header>
     {% if books %}
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th scope="col">Rank</th>
-            <th scope="col">Title</th>
-            <th scope="col">Author</th>
-            <th scope="col">Description</th>
-          </tr>
+            <th style="color:white;"><scope="col">Rank</th>
+            <th style="color:white;"><scope="col">Title</th>
+            <th style="color:white;"><scope="col">Author</th>
+            <th style="color:white;"><scope="col">Description</th>
+        </tr>
         </thead>
         <tbody>
           {% for book in books %}
