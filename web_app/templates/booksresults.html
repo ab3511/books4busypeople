@@ -82,19 +82,11 @@
                 h4 {  color:#041E42 ; font-family: "arial black"; }
                 p {  color:#041E42 ; font-family: "georgia"; padding-left: 25px; padding-right: 25px;} 
                 th {text-decoration: underline; font-family: "arial black"; border-bottom: 1px solid (99, 102, 106)}
-                table {outline-color:rgba(99, 102, 106)}
+                th, td{ border-left:1px solid rgba(99, 102, 106, 0.3); border-right: 1px solid rgba(99, 102, 106, 0.3);
+                    border-top:1px solid rgba(99, 102, 106, 0.3); border-bottom: 1px solid rgba(99, 102, 106, 0.3);}
             </style>
         <h1>Books4BusyPeople</h1>
-        <h2>{{genre_name}}
-        <option value = "combined-print-and-e-book-fiction">Combined Print and e-book Fiction</option>
-        <option value = "combined-print-and-e-book-nonfiction">Combined Print and e-book Nonfiction</option>
-        <option value = "hardcover-fiction">Hardcover Fiction</option>
-        <option value = "hardcover-nonfiction">Hardcover Nonfiction</option>
-        <option value = "trade-fiction-paperback">Paperback Fiction</option>
-        <option value = "paperback-nonfiction">Paperback Nonfiction</option>
-        <option value = "picture-books">Picture Books</option>
-        <option value = "young-adult-hardcover"> Young Adult Hardcover</option>
-            </h2>
+        <h2>What you missed in {{genre_name}}</h2>
         <hr>    
   </header>
     {% if books %}
@@ -103,7 +95,7 @@
         <thead>
           <tr>
             <th style="color:#041E42; text-align:center;"><scope="col">Rank</th>
-            <th style="color:#041E42; text-align:center;"><scope="col">Title</th>
+            <th style="color:#041E42; text-align:center;"><scope="col">Book Title</th>
             <th style="color:#041E42; text-align:center;"><scope="col">Author</th>
             <th style="color:#041E42; text-align:center;"><scope="col">Description</th>
         </tr>
@@ -112,8 +104,8 @@
           {% for book in books %}
             <tr>
               <td style="color:#041E42;text-align:center;">{{ book["rank"] }}</td>
-              <td style="color:#041E42;">{{ book["title"] }}</td>
-              <td style="color:#041E42;">{{ book["author"] }}</td>
+              <td style="color:#041E42; font-weight: bold;">{{ book["title"] }}</td>
+              <td style="color:#041E42; font-style: oblique;">{{ book["author"] }}</td>
               <td style="color:#041E42;">{{ book["description"] }}</td>
             </tr>
           {% endfor %}
