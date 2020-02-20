@@ -1,86 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     
 <body>
-                <style>   
-                    .sidenav {
-                    height: 100%;
-                    width: 0;
-                    position: fixed;
-                    z-index: 1;
-                    top: 0;
-                    left: 0;
-                    background-color: #111;
-                    overflow-x: hidden;
-                    transition: 0.5s;
-                    padding-top: 60px;
-                    }
+            <style>   
+                .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #041E42 ;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+                }
 
-                    .sidenav a {
-                    padding: 8px 8px 8px 32px;
-                    text-decoration: none;
-                    font-size: 25px;
-                    font-weight: bold;
-                    color: #b0daeb;
-                    font-family: arial black;
-                    display: block;
-                    transition: 0.3s;
-                    }
+                .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                font-weight: bold;
+                color: #63666A ;
+                font-family: arial black;
+                display: block;
+                transition: 0.3s;
+                }
 
-                    .sidenav a:hover {
-                    color: #f1f1f1;
-                    }
+                .sidenav a:hover {
+                color: #041E42;
+                }
 
-                    .sidenav .closebtn {
-                    position: absolute;
-                    top: 0;
-                    right: 25px;
-                    font-size: 36px;
-                    margin-left: 50px;
-                    }
+                .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+                }
 
-                    @media screen and (max-height: 450px) {
-                    .sidenav {padding-top: 15px;}
-                    .sidenav a {font-size: 18px;}
-                    }
-                    </style>
-                    </head>
+                @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+                }
+                </style>
+                </head>
 
 
-                    <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="newhomepage.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="Contact.html">Contact Us</a></li>
-                    </div>
+                <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="newhomepage.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="Contact.html">Contact Us</a>
+                    </li>
+                </div>
 
-                    <span style="font-size:16px;cursor:pointer;color:whitesmoke;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onclick="openNav()">&#9776; learn more</span>
+                <span style="font-size:16px;cursor:pointer;color:#041E42; padding-left: 5pt; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onclick="openNav()">&#9776; more</span>
 
-                    <script>
-                    function openNav() {
-                    document.getElementById("mySidenav").style.width = "250px";
-                    }
+                <script>
+                function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                }
 
-                    function closeNav() {
-                    document.getElementById("mySidenav").style.width = "0";
-                    }
-            </script>
+                function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                }
+        </script>
 
     <header>
     <div class="container">
       <div id="branding">
-        <style>   body {background-color: rgb(5, 9, 66); color: "white";}
-            h1 {  color: white; text-align: center; font-family: "arial black"; }
-            h2 {  color: white; text-align: center; }
-            h4 {  color: white; font-family: "arial black"; }
-            p {  color: white; font-family: "georgia"; } </style>
-        <h1><span class="highlight">Books4BusyPeople</span></h1>
-        <h2>{{Genre}}</h2>
+        <style>   body {background-color: rgba(99, 102, 106, 0.253);}
+                h1 {  color: #041E42 ; text-align: center; font-family: "arial black"; }
+                h2 {  color: #041E42 ; text-align: center; font-family: "arial black"; font-size: 20pt;}
+                h4 {  color:#041E42 ; font-family: "arial black"; }
+                p {  color:#041E42 ; font-family: "georgia"; padding-left: 25px; padding-right: 25px;} 
+                th {text-decoration: underline; font-family: "arial black"; border-bottom: 1px solid (99, 102, 106)}
+                table {outline-color:rgba(99, 102, 106)}
+            </style>
+        <h1>Books4BusyPeople</h1>
+        <h2>{{genre}}</h2>
         <hr>    
   </header>
     {% if books %}
@@ -88,19 +93,19 @@
       <table class="table">
         <thead>
           <tr>
-            <th font-family:  Impact , Charcoal, sans-serif; style="color:white; text-align:center;"><scope="col">Rank</th>
-            <th style="color:white; text-align:center;"><scope="col">Title</th>
-            <th style="color:white; text-align:center;"><scope="col">Author</th>
-            <th style="color:white; text-align:center;"><scope="col">Description</th>
+            <th style="color:#041E42; text-align:center;"><scope="col">Rank</th>
+            <th style="color:#041E42; text-align:center;"><scope="col">Title</th>
+            <th style="color:#041E42; text-align:center;"><scope="col">Author</th>
+            <th style="color:#041E42; text-align:center;"><scope="col">Description</th>
         </tr>
         </thead>
         <tbody>
           {% for book in books %}
             <tr>
-              <td style="color:white;">{{ book["rank"] }}</tdstyle="color:white;">
-              <td style="color:white;">{{ book["title"] }}</td>
-              <td style="color:white;">{{ book["author"] }}</td>
-              <td style="color:white;">{{ book["description"] }}</td>
+              <td style="color:#041E42;text-align:center;">{{ book["rank"] }}</td>
+              <td style="color:#041E42;">{{ book["title"] }}</td>
+              <td style="color:#041E42;">{{ book["author"] }}</td>
+              <td style="color:#041E42;">{{ book["description"] }}</td>
             </tr>
           {% endfor %}
         </tbody>
