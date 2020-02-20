@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
 <body>
                 <style>   
                     .sidenav {
@@ -81,8 +79,8 @@
             h2 {  color: white; text-align: center; }
             h4 {  color: white; font-family: "arial black"; }
             p {  color: white; font-family: "georgia"; } </style>
-        <h1><span class="highlight">Georgetown Book Club</span></h1>
-        <h2><span class="highlight">{{Genre}}</span></h2>
+        <h1><span class="highlight">Books4BusyPeople</span></h1>
+        <h2>{{Genre}}</h2>
         <hr>    
   </header>
     {% if books %}
@@ -90,19 +88,19 @@
       <table class="table">
         <thead>
           <tr>
-            <th style="color:white;"><scope="col">Rank</th>
-            <th style="color:white;"><scope="col">Title</th>
-            <th style="color:white;"><scope="col">Author</th>
-            <th style="color:white;"><scope="col">Description</th>
+            <th font-family:  Impact , Charcoal, sans-serif; style="color:white; text-align:center;"><scope="col">Rank</th>
+            <th style="color:white; text-align:center;"><scope="col">Title</th>
+            <th style="color:white; text-align:center;"><scope="col">Author</th>
+            <th style="color:white; text-align:center;"><scope="col">Description</th>
         </tr>
         </thead>
         <tbody>
           {% for book in books %}
             <tr>
-              <td>{{ book["rank"] }}</td>
-              <td>{{ book["title"] }}</td>
-              <td>{{ book["author"] }}</td>
-              <td>{{ book["description"] }}</td>
+              <td style="color:white;">{{ book["rank"] }}</tdstyle="color:white;">
+              <td style="color:white;">{{ book["title"] }}</td>
+              <td style="color:white;">{{ book["author"] }}</td>
+              <td style="color:white;">{{ book["description"] }}</td>
             </tr>
           {% endfor %}
         </tbody>
