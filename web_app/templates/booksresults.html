@@ -85,7 +85,16 @@
                 table {outline-color:rgba(99, 102, 106)}
             </style>
         <h1>Books4BusyPeople</h1>
-        <h2>{{genre}}</h2>
+        <h2>{{genre_name}}
+        <option value = "combined-print-and-e-book-fiction">Combined Print and e-book Fiction</option>
+        <option value = "combined-print-and-e-book-nonfiction">Combined Print and e-book Nonfiction</option>
+        <option value = "hardcover-fiction">Hardcover Fiction</option>
+        <option value = "hardcover-nonfiction">Hardcover Nonfiction</option>
+        <option value = "trade-fiction-paperback">Paperback Fiction</option>
+        <option value = "paperback-nonfiction">Paperback Nonfiction</option>
+        <option value = "picture-books">Picture Books</option>
+        <option value = "young-adult-hardcover"> Young Adult Hardcover</option>
+            </h2>
         <hr>    
   </header>
     {% if books %}
