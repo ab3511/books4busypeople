@@ -11,6 +11,7 @@ api_key = os.getenv("NYT_API_KEY", default="OOPS")
 newroutes = Blueprint("newroutes", __name__)
 
 @newroutes.route("/books_home")
+@newroutes.route("/")
 def newindex():
     print("VISITING THE NEW INDEX PAGE")
     return render_template("newhomepage.html")
