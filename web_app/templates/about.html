@@ -1,12 +1,5 @@
-{% extends "layout.html" %}
-
-{% block title %}
-  <title>Products | Example Web App</title>
-{% endblock %}
-
 <!DOCTYPE html>
-<html>
-    {% block content %}  
+<html> 
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -63,7 +56,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="newhomepage.html">Home</a>
         <a href="about.html">About</a>
-        <a href="Contact.html">Contact Us</a></li>
+        <a href="/Contact">Contact Us</a></li>
         </div>
 
         <span style="font-size:16px;cursor:pointer;color:whitesmoke;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onclick="openNav()">&#9776; learn more</span>
@@ -96,4 +89,3 @@
 	  </footer>
   </body>
 </html>
-{% endblock %}

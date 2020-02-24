@@ -1,24 +1,11 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Contact</title>
-  </head>
-  <body>
-    <style>   body {background-color: rgb(5, 9, 66); color: "white";}
-        h1 {  color: white; text-align: center; font-family: "arial black"; }
-        h2 {  color: white; text-align: center; }
-        h4 {  color: white; font-family: "arial black"; }
-        p {  color: white; font-family: "georgia"; } </style>
-        <h1>Books4BusyPeople: Contact</h1>
+
+        {% extends "layoutbooks.html" %}
+        {% block content %}
         <h2>Culturing Hoyas One Book at a Time</h2>
-        <hr>
-       <p>Our Address: 1015 Literate Blvd NW Washington, DC 20057</p>
-           <p> Phone: 202-LUV-BOOKS</p>
-           <P>Email: customerservice@books4busypeople.com</P>
-  </body>
-</html>
+                <hr>
+            <p>Our Address: 1015 Literate Blvd NW Washington, DC 20057</p>
+                <p> Phone: 202-LUV-BOOKS</p>
+                <P>Email: customerservice@books4busypeople.com</P>
+        {% endblock %}
+
+

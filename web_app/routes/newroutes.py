@@ -15,6 +15,16 @@ def newindex():
     print("VISITING THE NEW INDEX PAGE")
     return render_template("newhomepage.html")
 
+@newroutes.route("/about")
+def about():
+    print("About")
+    return render_template("about.html")
+
+@newroutes.route("/contact")
+def contact():
+    print("Contact Us")
+    return render_template("Contact.html")
+
 @newroutes.route('/bookstoread', methods=["POST"])
 def request_books_to_read():
     print("FINDING BOOKS...")
